@@ -1,3 +1,9 @@
+MediMoov à domicile, ceci est une copie de travail du futur site.
+A modifier, agrémenter, compléter jusqu'à résultat final.
+
+---
+Informations sur le template utilisé :
+
 "Boxify" One Page Website Template by Peter Finlan for Codrops
 
 Demo: http://tympanus.net/Freebies/Boxify/
