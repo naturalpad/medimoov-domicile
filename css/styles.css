@@ -791,23 +791,23 @@ Showcase
 }
 .device {
     position: absolute;
-    top: -60px;
-    left: 20%;
+    top: -120px;
+    left: -30%;
     min-height: 676px;
-    width: 359px;
-    background: url('../img/iphone-skeleton.png') no-repeat center center;
+    width: 739px;
+    background: url('../img/imac-skeleton.png') no-repeat center center;
 }
 .device-content {
     position: absolute;
-    top: 115px;
-    left: 56px;
-    width: 247px;
-    height: 445px;
+    top: 67px;
+    left: 26px;
+    width: 695px;
+    height: 458px;
     background: rgba(0, 0, 0, 0.3);
 }
 .device-content img {
-    width: 247px;
-    height: 445px;
+    width: 695px;
+    height: 458px;
 }
 .showcase-wrap {
     position: relative;
