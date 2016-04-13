@@ -449,10 +449,10 @@ p {
     line-height: 25px;
 }
 a {
-    color: #73d0da
+    color: #45aaff
 }
 a:hover, a:focus {
-    color: #73d0da;
+    color: #ffae45;
     text-decoration: none;
 }
 .texture-overlay {
@@ -473,11 +473,11 @@ Buttons
     padding: 20px 50px;
     border-radius: 3px;
     background-color: #fff;
-    color: #4b98a9;
+    color: #45aaff;
     font-size: 16px;
 }
 .use-btn:hover, .use-btn:focus {
-    background-color: #73d0da;
+    background-color: #ffae45;
     color: #fff;
     text-decoration: none;
 }
@@ -490,13 +490,13 @@ Buttons
     font-size: 16px;
 }
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: #ffae45;
+    color: #ffae45;
     text-decoration: none;
 }
 .read-more-btn {
     display: inline-block;
-    color: #323a45;
+    color: #45aaff;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -592,8 +592,13 @@ Hero
 }
 .hero h1 span {
     display: inline-block;
-    color: #a1a9b0;
+    color: #fff;
 }
+
+.hero #main-title {
+    text-transform: uppercase;
+}
+
 #home {
     width: 100%;
     height: 100%;
@@ -733,7 +738,7 @@ Features List
     margin-right: 25px;
     width: 90px;
     height: 90px;
-    border: solid 2px #4e9ba3;
+    border: solid 2px #45aaff;
     border-radius: 50%;
     vertical-align: top;
     text-align: center;
@@ -741,7 +746,7 @@ Features List
     line-height: 90px;
 }
 .feature-icon i {
-    color: #4e9ba3
+    color: #45aaff
 }
 
 /* ==========================================================================
@@ -780,21 +785,29 @@ Showcase
     background-size: cover;
 }
 .showcase h1 {
-    margin: 0 0 20px 0;
+    margin: 0 0 1.2em 0;
     color: #fff;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 .showcase p {
-    margin-bottom: 25px;
+    margin-bottom: 1.4em;
     color: #fff;
+    font-size: 1.4em;
 }
+
+.showcase blockquote{
+    font-size: 0.8em;
+}
+
 .device {
     position: absolute;
-    top: -120px;
-    left: -30%;
-    min-height: 676px;
-    width: 739px;
+    top: -2.5em;
+    left: -15em;
+    max-height: 48em;
+    height: 48em;
+    width: 126%;
     background: url('../img/imac-skeleton.png') no-repeat center center;
 }
 .device-content {
@@ -811,8 +824,8 @@ Showcase
 }
 .showcase-wrap {
     position: relative;
-    padding: 100px 0;
-    min-height: 600px;
+    padding: 8em 0;
+    min-height: 100%;
 }
 .showcase-slider ul {
     margin: 0;
@@ -820,7 +833,7 @@ Showcase
     list-style: none;
 }
 .showcase-slider .flickity-page-dots {
-    bottom: 20px;
+    bottom: 1.5em;
 }
 
 /* ==========================================================================
@@ -1028,8 +1041,8 @@ Nav Overlay
     transition: all 300ms ease-in-out;
 }
 .overlay ul li a:hover, .overlay ul li a:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: #ffae45;
+    color: #ffae45;
 }
 
 /* Effects */
