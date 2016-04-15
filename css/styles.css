@@ -945,7 +945,7 @@ Download Now
 ========================================================================== */
 .download {
     padding: 120px 0;
-    background-color: #3f6184;
+    background: rgb(40, 70, 102) url('../img/infos-01.jpg') repeat center center;
 }
 .download h1 {
     margin: 0 0 15px 0;
@@ -1103,4 +1103,61 @@ Waypoints
 .delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+
+/* ==========================================================================
+Form
+========================================================================== */
+
+#shadowing
+{
+    display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: skyblue;
+	z-index:10;
+	opacity:0.5;
+	filter: alpha(opacity=75);
+}
+
+
+#box 
+{
+	display: none;
+	position: fixed;
+	top: 14%;
+	left: 30%;
+    width: 40%;
+    height: 60%;
+	padding: 3em;
+	margin:0;
+	background-color: white;
+	z-index:101;
+}
+
+#box h1, h2, label{
+    color: lightslategray;
+}
+
+#box h1{
+    text-align: center;
+}
+
+#box .btn-primary, .btn-primary, .open>.btn-primary.dropdown-toggle {
+    background-color: lightslategray;
+    border-color: lightslategray;
+    width:50%;
+}
+
+#box .btn-primary.active, .btn-default, .btn-primary:active, .open>.btn-primary.dropdown-toggle {
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    color: white;
+}
+
+#box p{
+    font-family: 'Nunito', sans-serif;
 }

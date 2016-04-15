@@ -59,7 +59,7 @@
 					<div class="row hero-content">
 						<div class="col-md-12">
                             <h1 class="animated fadeInDown"><span id="main-title">Jouez, bougez, restez en bonne santé.</span><br/><br/>Dispositif médical à destination des particuliers pour la rééducation et le soutien à l'autonomie.</h1>
-							<a href="#contact" class="use-btn animated fadeInUp">Nous contacter</a> <a href="#about" class="learn-btn animated fadeInUp">En savoir plus<i class="fa fa-arrow-down"></i></a>
+							<a href="#" onclick="openbox(0.1)" class="use-btn animated fadeInUp">Nous contacter</a> <a href="#about" class="learn-btn animated fadeInUp">En savoir plus<i class="fa fa-arrow-down"></i></a>
 						</div>
 					</div>
 				</div>
@@ -183,7 +183,7 @@
 									<a href="http://www.chu-nimes.fr/pole-nacre/reeducation-et-readaptation-fonctionnelle.html" target="_blank"><img src="img/chunimes-logo.png" alt="CHU Nîmes Logo"></a>
 								</div>
 							</blockquote>
-							<a href="" class="download-btn">Nous contacter ! <i class="fa fa-heart"></i></a>
+							<a href="#contact" class="download-btn">Nous contacter ! <i class="fa fa-heart"></i></a>
 						</div>
 					</div>
 				</div>
@@ -359,6 +359,61 @@
 				</ul>
 			</nav>
 		</div>
+
+        <section class="containter">
+            <div id="shadowing" onclick="closebox()"></div>
+            <div id="box">
+              <form role="form" method="post">
+                  <h1>Nous contacter</h1>
+                  <div class="row">
+                      <div class="col-md-3">
+                        <h2>Pré-inscription</h2>
+                      </div>
+                          <div class="btn-group" data-toggle="buttons">
+                              <label class="btn btn-primary active">
+                              <input type="radio" name="options" id="inscription-ok" autocomplete="off" checked> Oui
+                              </label>
+                              <label class="btn btn-primary">
+                                <input type="radio" name="options" id="inscription-non" autocomplete="off"> Non
+                              </label>
+                          </div>
+                  </div>    
+                  <div class="row">
+                      <div class="col-md-5">
+                          <h2>S'inscrire à la newsletter</h2>
+                      </div>
+                          <div class="btn-group" data-toggle="buttons">
+                              <label class="btn btn-primary active">
+                              <input type="radio" name="options" id="newsletter-ok" autocomplete="off" checked> Oui
+                              </label>
+                              <label class="btn btn-primary">
+                                <input type="radio" name="options" id="newsletter-non" autocomplete="off"> Non
+                              </label>
+                          </div>
+                  </div>
+                  <div class="form-group">
+                    <h2 class="col-sm-12">Vos informations (obligatoire)</h2>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="name" placeholder="Prénom Nom">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-6">
+                        <input type="email" placeholder="Votre e-mail" class="form-control" id="email">
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <h2> Votre message</h2>
+                      <div class="form-group">
+                        <textarea class="form-control" id="commentsarea" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-default" onclick="retrieve()">Submit</button>
+                      <button type="button" class="btn btn-danger" onclick="closebox()">Annuler</button>
+                  </div>
+                </form>
+            </div>
+        </section>
+    
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/min/toucheffects-min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -378,5 +433,7 @@
 		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 		ga('create','UA-XXXXX-X');ga('send','pageview');
 		</script>
+        <!-- other scripts -->
+        <script src="js/scripts.js"></script>
 	</body>
 </html>
